@@ -15,7 +15,6 @@
             <input type="text" name="name" value="{{$group->name}}">
 
             <button type="submit"> update</button>
-
             <a href="{{route ('groups.index')}}">back</a>
         </form>
 </body>

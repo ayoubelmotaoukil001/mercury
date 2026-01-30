@@ -20,7 +20,6 @@
     <input type="text" name="phone">
 
     
-  
     </form>   
     <a href="{{ route('contacts.index')}}">back</a> 
 

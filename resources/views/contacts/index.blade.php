@@ -7,6 +7,15 @@
 </head>
 <body>
     <h1>contact list</h1>
+    <form method="get">
+    <select name="group_id">
+        <option value="">all the groups</option>
+        @foreach($groups as $group)
+        <option value="{{$group->id}}"> {{$group->name}}</option>
+        @endforeach
+    </select>
+        <button>filter</button>
+    </form>
     <a href="{{route('contacts.create')}}">add new contact</a>
     <ul>
         @foreach ($contacts as $contact)

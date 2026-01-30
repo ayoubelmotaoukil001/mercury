@@ -11,11 +11,14 @@ class ContactController extends Controller
     /**
      * Display a lissting of the resource.
      */
-    public function index()
-    {
-       $contacts =Contact::all() ;
-       return view('contacts.index' , compact('contacts')) ;
-           }
+   public function index()
+{
+    $query = Contact::query();
+    if(request('group_id')) $query->where('group_id', request('group_id'));
+    $contacts = $query->get();
+    $groups = Group::all();
+    return view('contacts.index', compact('contacts','groups'));
+}
 
     /**
      * Show the form for creating a new resource.
@@ -90,5 +93,6 @@ class ContactController extends Controller
         $contact ->delete() ;
 
     return redirect()->route('groups.show') ;
-    }
+    } 
+
 }

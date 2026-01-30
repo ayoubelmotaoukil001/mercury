@@ -15,7 +15,6 @@
         <input type="text" name="name" placeholder="write the new name of contact" value="{{$contact->name}}">
 
         <label > email</label>
-
         <input type="text" name="email" placeholder="write the new email of contact" value="{{$contact->email}}">
 
 

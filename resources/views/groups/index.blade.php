@@ -19,7 +19,7 @@
             <button type="submit"> delete</button>
         </form>
         <td>
-    <a href="{{ route('groups.show', $group->id) }}" class="btn btn-info btn-sm">عرض</a>
+    <a href="{{ route('groups.show', $group->id) }}" class="btn btn-info btn-sm">show</a>
 </td>
 
     </li>

@@ -47,7 +47,6 @@ class GroupController extends Controller
     {
     $group = Group::with('contacts')-> findOrFail($id) ;
 
-
     $contacts = $group->contacts()
     ->when($request->search ,function ($query) use($request) {
      $query->where('name' ,'LIKE' , '%'.$request->search.'%') ;    

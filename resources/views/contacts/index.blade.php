@@ -8,7 +8,6 @@
 <body>
     <h1>contact list</h1>
     <a href="{{route('contacts.create')}}">add new contact</a>
-
     <ul>
         @foreach ($contacts as $contact)
         <li>

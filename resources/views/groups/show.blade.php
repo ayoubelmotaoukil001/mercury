@@ -19,7 +19,6 @@
 <a href="{{ route ('groups.addContacts' , $group->id) }}"> add membre</a>
 </a>
 
- 
     @if($contacts->count() > 0)
         <table class="table table-bordered">
             <thead>

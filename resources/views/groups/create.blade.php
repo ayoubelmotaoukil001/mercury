@@ -12,7 +12,6 @@
         <label>name of group :</label>
         <input type="text" name="name">
         <button type="submit">save</button>
-
 </form>
         <a href="{{ route('groups.index')}}"> back</a>
 </body>

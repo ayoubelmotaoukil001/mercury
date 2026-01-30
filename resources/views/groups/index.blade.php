@@ -8,7 +8,6 @@
 <body>
     <h1>group list </h1>
     <a href="{{route('groups.create')}}">add new group</a>
-
     <ul>
     @foreach($groups as $group)
     <li>

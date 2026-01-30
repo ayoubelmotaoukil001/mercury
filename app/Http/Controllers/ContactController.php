@@ -61,7 +61,6 @@ class ContactController extends Controller
         $contact = Contact::findOrFail($id) ;
         return view('contacts.edit' , compact('contact')) ;
     }
-
     /**
      * Update the specified resource in storage.
      */

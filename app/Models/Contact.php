@@ -12,4 +12,4 @@ class Contact extends Model
     {
         return $this->belongsTo(Group::class);
     }
-}
+ }
